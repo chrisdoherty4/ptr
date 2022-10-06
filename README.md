@@ -17,3 +17,7 @@ func main() {
     }
 }
 ```
+
+## Copy it, don't use-it
+
+Given the simplicity of this package, I recommend copying it to your source tree to avoid an unnecessary depdency.
