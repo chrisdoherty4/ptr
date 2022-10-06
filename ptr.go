@@ -1,7 +1,7 @@
 /*
-Package ptr provides pointers to primitive types. Its useful in contexts where
-a variable gives nil primitive type pointers semantics (often meaning "not set") which
-can make it annoying to set the value.
+Package ptr provides utility functions for converting non-addressable primitive types to pointers.
+Its useful in contexts where a variable gives nil primitive type pointers semantics
+(often meaning "not set") which can make it annoying to set the value.
 
 Example
 
@@ -10,7 +10,7 @@ Example
 	}
 
 	func main() {
-		foo := &Foo{
+		foo := Foo{
 			A: ptr.Int(1)
 		}
 	}
