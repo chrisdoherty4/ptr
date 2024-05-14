@@ -88,3 +88,7 @@ func Complex64(v complex64) *complex64 {
 func Complex128(v complex128) *complex128 {
 	return &v
 }
+
+func To[T any](v T) *T {
+	return &v
+}
